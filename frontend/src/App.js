@@ -21,7 +21,10 @@ function App() {
     <Routes>
         {
           user == null ?
+          <>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/register' element={<Register/>}/>
+          </>
           : <Route path='/' element={<Home/>}/>
         }
        
